@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorWhite"
+        android:visibility="gone"
+        app:srcCompat="@drawable/iconcat" />
+
+    <ImageView
+        android:id="@+id/Mouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="450dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/iconmouse" />
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="675dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/StartGame"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/RestartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="675dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/RestartGame"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+
+</LinearLayout>
