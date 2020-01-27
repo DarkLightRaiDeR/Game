@@ -2,31 +2,30 @@ package com.example.game;
 
 public class Cat {
 
-    private int width = 60, weight = 50;
     private boolean takeMouse = false;
-    private int speed = 300;
+    private float speed = 0.1f;
 
-    public int getSpeed() {
+    float getSpeed() {
+        this.speed += 0.005;
         return speed;
     }
 
     public int getWidth() {
+        int width = 60;
         return width;
     }
 
-    public int getWeight() {
-        return weight;
+    public int getHeight() {
+        int height = 60;
+        return height;
     }
 
-    public boolean isTakeMouse() {
+    boolean isTakeMouse() {
         return takeMouse;
     }
 
-    public void setTakeMouse(boolean takeMouse) {
+    void setTakeMouse(boolean takeMouse) {
         this.takeMouse = takeMouse;
     }
 
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
 }

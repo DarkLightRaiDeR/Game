@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -18,6 +19,7 @@
         android:background="@color/colorWhite"
         android:visibility="gone"
         app:srcCompat="@drawable/iconcat" />
+
 
     <ImageView
         android:id="@+id/Mouse"
@@ -41,13 +43,23 @@
         android:textSize="20sp"
         android:visibility="visible" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        android:text="@string/gameEnd"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/RestartButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="675dp"
+        android:layout_marginTop="320dp"
         android:layout_marginRight="10dp"
         android:background="@color/colorPrimary"
         android:text="@string/RestartGame"
